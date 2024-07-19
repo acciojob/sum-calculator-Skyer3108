@@ -32,7 +32,7 @@ const App = () => {
 
         <input onChange={(e)=>setVal(e.target.value)} type='number' value={val} />
 
-        <p>Sum :{sum}</p>
+        <p>Sum: {sum}</p>
 
 
     </div>
