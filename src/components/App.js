@@ -7,11 +7,21 @@ const App = () => {
 
   const [val,setVal]=useState(0)
 
-  const [sum,setSum]=useState()
+  const [sum,setSum]=useState(0)
 
   useEffect(()=>{
 
-    setSum(sum+val)
+    async function handleSum(){
+
+      const res=sum+parseInt(val)
+
+      setSum(res)
+
+
+    }
+
+    handleSum()
+    
 
   },[val])
   return (
